@@ -1,0 +1,846 @@
+/* Variables */
+
+:root {
+    --blur-color: #141b41
+}
+
+:root {
+    --aliceblue-color: #F0F8FF;
+}
+
+:root {
+    --blackish-blur-color: #202439;
+}
+
+:root {
+    --grey-color: lightslategray;
+}
+
+/* Body background */
+body {
+    background-color: #0c1027 !important;
+}
+
+
+/* Geneic Classes */
+.alice-text-color {
+    color: var(--aliceblue-color);
+}
+
+.blackish-blur {
+    background-color: var(--blackish-blur-color);
+    margin-bottom: 10px;
+}
+
+.text-times-new-roman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-sogoe {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rem1-fontsize {
+    font-size: 1rem;
+    ;
+}
+
+.rem0-8-fontsize {
+    font-size: 0.8rem;
+
+}
+
+.text-decoration-link {
+    text-decoration: none;
+}
+
+.greycolor {
+    color: var(--grey-color);
+}
+
+
+
+/* Header Section */
+
+
+/* Hamburger Icon */
+
+.mobile-container {
+    min-width: 200px;
+    border-radius: 20px;
+    position: relative;
+    display: none;
+}
+
+.topnav {
+    background-color: #0c1027;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hamburger-search {
+    margin-left: 5px;
+    border-radius: 20px;
+    border-color: greenyellow;
+    background-color: #0c1027;
+    color: white;
+}
+
+
+/* LOGO */
+
+.nav-section-logo {
+    color: var(--aliceblue-color);
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.player-logo:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.favourite-section {
+    text-decoration: none;
+    color: var(--aliceblue-color);
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.favourite-section:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+.Logo-header-text {
+    margin: 0;
+}
+
+.main-section {
+    width: 67%;
+    display: inline-block;
+}
+
+/* Right Side search-bar section, Profile-photo & Notification icon */
+
+.search-nav-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    position: absolute;
+    right: 3%;
+    justify-content: space-between;
+}
+
+/* Search Bar */
+.search {
+    width: 300px;
+    height: 35px;
+    background-color: var(--blur-color);
+    border-radius: 4rem;
+    margin-right: 10%;
+}
+
+.search__box {
+    float: left;
+    width: 0;
+    height: 2rem;
+    background: none;
+    color: #f7f7f7;
+    font-size: 1rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    position: relative;
+    opacity: 1;
+    transition: all .75s ease-in;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+
+.search__icon {
+    box-sizing: border-box;
+    float: right;
+    font-size: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    color: wheat;
+    transition: all .25s ease-in;
+    padding: .3rem;
+    border-radius: 50%;
+}
+
+.container:hover>.search__box {
+    width: 80%;
+    padding: 0 1rem;
+}
+
+.container:hover>.search__icon {
+    background-color: #eee;
+}
+
+/* Show class is also for JS, to toggle - Search Anything.... */
+.show {
+    width: 85%;
+}
+
+.search-nav-section .bell-icon {
+    padding: 6px;
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+
+.search-nav-section img {
+    margin-left: 10%;
+    font-size: 1rem;
+    margin-top: -3px;
+}
+
+
+/* Header Section End */
+
+/* Current Playlist main image, description */
+
+.song-header-track {
+    width: 100%;
+    background-color: var(--blur-color);
+    margin-left: 5%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.main-image {
+    width: 1000px;
+}
+
+.main-image img {
+    width: 300px;
+    height: 100%;
+}
+
+
+.music-track-info {
+    margin: 5% 0 0 2%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.music-track-info button {
+    background-image: linear-gradient(90deg, hsl(251.49deg 64.38% 42.94%), hsl(285.7deg 68.33% 56.67%));
+    width: 20%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0;
+    color: #eee;
+}
+
+.play-button-follow {
+    display: flex;
+    flex-direction: row;
+}
+
+.play-button-follow button {
+    width: 40%;
+    max-width: 150px;
+    min-width: 105px;
+}
+
+.play-button-follow a {
+    margin-left: 10%;
+    text-decoration: none;
+    margin-top: 1%;
+}
+
+.play-button-follow a:hover {
+    text-decoration: wavy;
+    color: burlywood;
+}
+
+.follwers-count {
+    font-size: 0.8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    position: absolute;
+    right: 31%;
+    top: 26%;
+}
+
+/* Lists of song in playlist, like symbol & Plus Symbol to add in Saved Collection */
+
+.song-list {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.mirage-song-name {
+    display: flex;
+    align-items: baseline;
+}
+
+
+/* Songs-List */
+
+.song-list-size {
+    width: 65%;
+    height: 20px;
+}
+
+.song-list-margin {
+    margin-left: 2%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+
+.heart {
+    position: absolute;
+    right: 37%;
+    margin-top: 14px;
+    color: white;
+}
+
+.heart:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.plus-sign {
+    position: absolute;
+    right: 32%;
+    color: white;
+}
+
+.plus-sign:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+.song-list h6 {
+    margin: 0;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+.song-author {
+    margin: 0;
+    font-size: 0.7rem;
+    color: lightslategray;
+}
+
+.author-details {
+    position: relative;
+    bottom: 8px;
+}
+
+.play-button {
+    position: relative;
+    right: 22px;
+    top: 3px;
+    /* margin-top: 15px; */
+    opacity: 0;
+}
+
+.play-button:hover {
+    opacity: 1;
+    box-shadow: 0 0 50px #ccc;
+}
+
+.song-number {
+    margin-left: 10px;
+    font-size: 0.8rem;
+    color: lightslategrey;
+}
+
+/* Aside Section */
+
+
+/* Similar Artist aSide section */
+.aside-section {
+    width: 27%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3.9%;
+    margin-top: 50px;
+}
+
+.similar-artist-section-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.similar-artist-section-heading a {
+    text-decoration: none;
+}
+
+.similar-artist-section-heading a:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+.parent-artist-body {
+    margin-bottom: 50px;
+}
+
+.Similar-artist-body {
+    margin: 20px 0 0 0;
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.aside-artist-image {
+    width: 28%;
+}
+
+.artist-song-name {
+    margin-left: 20px;
+}
+
+.artist-song-duration {
+    position: absolute;
+    right: 3%;
+}
+
+
+/* Recently Played aside section */
+
+.recently-played {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+    margin-right: 50px;
+}
+
+.aside-heart {
+    position: absolute;
+    right: 3%;
+    margin-top: 16px;
+    color: white;
+}
+
+.aside-heart:hover {
+    color: red;
+}
+
+
+
+/* Footer - Audio Player */
+.audio-player {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: hsl(0deg 0% 15.69%);
+    color: white;
+    height: 70px;
+}
+
+.audio-operators {
+    margin-left: 2.5%;
+    display: flex;
+}
+
+.current-audio-img {
+    padding: 12px;
+}
+
+.current-song-name {
+    margin-top: 12px;
+}
+
+.footer-heart {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.footer-heart a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-heart a:hover {
+    color: red;
+}
+
+.download-button:hover {
+    color: #b9c2f5 !important;
+    box-shadow: 0 0 0px #ccc;
+}
+
+.current-song-timeline {
+    position: absolute;
+    left: 35%;
+    width: 30%;
+}
+
+.song-operators {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+
+.song-operators a {
+    margin-right: 4%;
+    margin-left: 3%;
+}
+
+.song-operators button {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.song-operators a:hover {
+    box-shadow: 0px 0px 3px #ccc;
+}
+
+.song-time-line {
+    display: flex;
+    width: 100%;
+    margin-top: 13px;
+    min-width: 220px;
+}
+
+.time-line-song {
+    display: flex;
+}
+
+.time-line-song p {
+    margin-left: 2%;
+    margin-top: 0.6%;
+    margin-right: 2%;
+}
+
+.audio-settings {
+    display: flex;
+    position: absolute;
+    right: 7%;
+    margin-top: 22px;
+}
+
+.audio-settings a {
+    text-decoration: none;
+    color: wheat;
+    margin-right: 10%;
+}
+
+.audio-settings a:hover {
+    box-shadow: 0 0 5px #ccc;
+}
+
+
+/* Song description & overview status before media queries */
+.song-description {
+    margin-bottom: 30px;
+}
+
+.followers-small-screen {
+    display: none;
+}
+
+
+
+/* Resposive using Media Queries - Breakpoints - 860, 800, 700, 670, 600, 506, 453, 440 */
+
+@media screen and (max-width: 860px) {
+
+    .current-song-name {
+        font-size: small;
+    }
+
+    .current-audio-img {
+        width: 70px;
+        /* height: 75px; */
+    }
+
+    .audio-operators {
+        margin-left: 0%;
+    }
+
+    .current-song-timeline {
+        left: 27%;
+        width: 35%;
+    }
+
+    .footer-heart {
+        display: none;
+    }
+
+    .follwers-count {
+        font-size: 0.8em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: whitesmoke;
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aside-section {
+        display: block;
+    }
+
+    .main-section {
+        width: 90%;
+    }
+
+    .follwers-count {
+        font-size: 0.8em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: whitesmoke;
+        position: absolute;
+        right: 10%;
+        top: 26%;
+    }
+
+    .Similar-artist-body {
+        width: 150px;
+    }
+
+    .song-name-style {
+        min-width: 200px;
+    }
+
+    .similar-artist-section-heading {
+        display: block;
+    }
+
+    .similar-artist-section-heading h4 {
+        min-width: 300px;
+    }
+
+    .similar-artist-section-heading a {
+        min-width: 50px;
+    }
+
+    .follwers-count {
+        font-size: 0.8em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: whitesmoke;
+        font-size: x-small;
+    }
+
+    .heart {
+        position: absolute;
+        right: 15%;
+        margin-top: 14px;
+        color: white;
+    }
+
+    .heart:hover {
+        text-decoration: none;
+        color: red;
+    }
+
+    .plus-sign {
+        position: absolute;
+        right: 9%;
+        color: white;
+    }
+
+    .plus-sign:hover {
+        text-decoration: none;
+        color: burlywood;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+
+    .mobile-container {
+        display: block;
+    }
+
+    .follwers-count {
+        font-size: 0.8em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: whitesmoke;
+        font-size: x-small;
+        display: none;
+    }
+
+    .search-nav-section {
+        display: none;
+    }
+
+    .audio-settings {
+        display: flex;
+        flex-wrap: wrap;
+        right: 0px;
+        bottom: 10px;
+    }
+
+    .song-time-line {
+        display: flex;
+        width: 0%;
+        margin-top: 13px;
+        min-width: 150px;
+    }
+
+    .time-line-song {
+        margin-left: 2%;
+    }
+
+    .current-song-timeline {
+        margin-left: 3%;
+    }
+
+    .resize-icon {
+        position: absolute;
+        right: 10px;
+    }
+
+    .song-operators {
+        margin-left: 35px;
+    }
+
+    .mobile-container {
+        display: block;
+        position: relative;
+        margin-left: 30%;
+        background-color: #0c1027;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+
+    .main-image img:hover {
+        -webkit-filter: grayscale(100%) blur(3px);
+        filter: grayscale(100%) blur(3px);
+    }
+
+    .mobile-container {
+        display: block;
+        position: relative;
+        margin-left: 40%;
+        background-color: #0c1027;
+    }
+
+    .follwers-count {
+        display: none;
+    }
+
+    .main-image img {
+        width: 340%;
+
+    }
+
+    .music-track-info {
+        position: relative;
+        left: -100px;
+    }
+
+    .music-track-info h3 {
+        color: var(--aliceblue-color);
+    }
+
+    .band-name {
+        color: wheat;
+    }
+
+    .followers-small-screen {
+        display: block;
+    }
+
+    .main-image img {
+        opacity: 0.5;
+    }
+
+    .audio-settings {
+        display: none;
+    }
+
+    .recently-played p {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    .current-song-timeline {
+        margin-left: 15%;
+    }
+
+    .song-operators {
+        margin-left: 30px;
+    }
+
+    .song-operators a {
+        margin-left: 10px;
+    }
+
+    .main-section {
+        margin-top: -30px;
+    }
+
+    .favourite-section {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-container {
+        display: block;
+        position: relative;
+        margin-left: 34%;
+        background-color: #0c1027;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mobile-container {
+        display: block;
+        position: relative;
+        margin-left: 28%;
+        background-color: #0c1027;
+    }
+}
+
+@media screen and (max-width: 506px) {
+    .mobile-container {
+        display: block;
+        position: relative;
+        margin-left: 19%;
+        background-color: #0c1027;
+    }
+}
+
+@media screen and (max-width: 453px) {
+    .mobile-container {
+        display: block;
+        position: relative;
+        margin-left: 17%;
+        background-color: #0c1027;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .mobile-container {
+        display: block;
+        position: relative;
+        margin-left: 7%;
+        background-color: #0c1027;
+    }
+}

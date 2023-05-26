@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Studio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- BOOTSTRAP 4.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Creating Header which includes - LOGO, SEARCH-BAR, Hamburger menu incase of small screens, notification icon and profile image -->
+    <header class="header-section-player">
+
+        <div class="nav-section-logo">
+
+            <a href=""><img class="player-logo" src="images/Logo.png" alt=""></a>
+            <div style="margin-left: 10px;">
+                <p class="Logo-header-text">Ninjas</p>
+                <h5 class="alice-text-color">Studio</h5>
+            </div>
+            <a href="" class="favourite-section">Favourites</a>
+
+            <div class="search-nav-section">
+                <div class="search">
+                    <input type="text" id="box" placeholder="Search anything..." class="search__box">
+                    <i class="fas fa-search search__icon" id="icon" onclick="toggleShow()"></i>
+                </div>
+                <a href=""><i class="fa-regular fa-bell bell-icon"></i></a>
+                <a href="" style="margin-left: 5%;"><img style="width: 50px;" src="images/Profile-Image.png" alt=""></a>
+            </div>
+
+            <div class="mobile-container">
+                <div class="topnav">
+                    <div id="myLinks">
+
+                        <a href="">My Profile</a>
+                        <a href="">Favourites</a>
+                        <a href="">Downloads</a>
+                        <a href="">Saved Selections</a>
+                        <input class="hamburger-search" type="search" placeholder="Search anything....">
+
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <!-- Main Section - Single Playlist details -->
+
+    <div class="main-section">
+
+        <!-- Main Track Section -->
+
+        <section class="song-header-track">
+            <div class="main-image">
+                <img src="images/Song-image.png" alt="">
+            </div>
+            <div class="music-track-info">
+                <h3 class="alice-text-color" style="font-weight: bold; margin: 0;">ColdPlay</h3>
+                <p class="alice-text-color rem1-fontsize band-name">British Band</p>
+                <p class="alice-text-color song-description">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Aut cupiditate repellendus quo, magni saepe
+                    optio blanditiis, voluptas quam, tempore nesciunt voluptatem! Ipsum consequuntur eius iusto eligendi
+                    inventore recusandae doloremque eaque.</p>
+                <div class="play-button-follow">
+                    <button type="button" class="btn btn-light">Play all</button>
+                    <a href="" class="alice-text-color text-sogoe">Follow</a>
+                </div>
+                <div style="margin-bottom: 15%;">
+                    <p class="text-sogoe alice-text-color rem0-8-fontsize">247 tracks | 128 Albums</p>
+                    <p class="followers-small-screen alice-text-color rem0-8-fontsize">999 Followers</p>
+                </div>
+
+            </div>
+
+            <div class="alice-text-color follwers-count">
+                <p>999 Followers</p>
+            </div>
+
+        </section>
+
+
+        <!-- List of Songs available in PlayList -->
+
+        <section class="song-list song-list-sizes">
+            <div class="blackish-blur mirage-song-name" style="width: 100%;">
+                <p class="alice-text-color song-number">01</p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/mirage-song.png" ;
+                        alt=""></a>
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details">
+                    <h6>Mirage</h6>
+                    <p class="song-author"> Else</p>
+                </div>
+                <a href="" class="heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+                <a href="" class="text-decoration-link plus-sign"><i class="fa-duotone fa-plus"
+                        style="font-size: 28px;"></i></a>
+            </div>
+
+            <div class="blackish-blur mirage-song-name" style="width: 100%;">
+                <p class="alice-text-color song-number">02</p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/worry-abt-us.png" ;
+                        alt=""></a>
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details">
+                    <h6>Worry About Us</h6>
+                    <p class="song-author"> Rosie Lowe</p>
+                </div>
+                <a href="" class="heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+                <a href="" class="text-decoration-link plus-sign"><i class="fa-duotone fa-plus"
+                        style="font-size: 28px;"></i></a>
+            </div>
+
+            <div class="blackish-blur mirage-song-name" style="width: 100%;">
+                <p class="alice-text-color song-number"><i class="fa-solid fa-chart-simple"
+                        style="color: lightblue;"></i></p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/new-skin.png" ; alt=""></a>
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details">
+                    <h6>New Skin</h6>
+                    <p class="song-author"> Flume</p>
+                </div>
+                <a href="" class="heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+                <a href="" class="text-decoration-link plus-sign"><i class="fa-duotone fa-plus"
+                        style="font-size: 28px;"></i></a>
+            </div>
+
+            <div class="blackish-blur mirage-song-name" style="width: 100%;">
+                <p class="alice-text-color song-number">04</p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/worry-abt-us.png" ;
+                        alt=""></a>
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details">
+                    <h6>Worry About Us</h6>
+                    <p class="song-author"> Rosie Lowe</p>
+                </div>
+                <a href="" class="heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+                <a href="" class="text-decoration-link plus-sign"><i class="fa-duotone fa-plus"
+                        style="font-size: 28px;"></i></a>
+            </div>
+
+            <div class="blackish-blur mirage-song-name" style="width: 100%;">
+                <p class="alice-text-color song-number">05</p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/mirage-2-song.png" ;
+                        alt=""></a>
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details">
+                    <h6>New Skin</h6>
+                    <p class="song-author"> Flume</p>
+                </div>
+                <a href="" class="heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+                <a href="" class="text-decoration-link plus-sign"><i class="fa-duotone fa-plus"
+                        style="font-size: 28px;"></i></a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Aside section containing Similar Artists and Recently Played Songs -->
+
+    <aside class="aside-section">
+
+        <!-- Similar Artist Section -->
+
+        <div class="similar-artist-section-heading">
+            <h4 class="alice-text-color text-times-new-roman">Similar Artists</h4>
+            <a class="greycolor rem0-8-fontsize" href="">View All</a>
+
+        </div>
+
+        <div class="parent-artist-body">
+            <div class="Similar-artist-body">
+                <a href=""><img class="aside-artist-image" src="images/imagine-dragons.png" alt=""
+                        style="width: 100%;"></a>
+
+                <div class="artist-song-name alice-text-color">
+                    <h6>Imagine Dragons</h6>
+                    <p class="rem0-8-fontsize greycolor">Pop Band</p>
+                </div>
+                <div class="artist-song-duration">
+                    <i class="fa-solid fa-ellipsis greycolor" style="padding-left: 6px;"></i>
+                    <p class="alice-text-color rem0-8-fontsize">4:44</p>
+                </div>
+            </div>
+            <div class="Similar-artist-body">
+                <a href=""><img class="aside-artist-image" src="images/imagine-dragons.png" alt=""
+                        style="width: 100%;"></a>
+
+                <div class="artist-song-name alice-text-color">
+                    <h6>Imagine Dragons</h6>
+                    <p class="rem0-8-fontsize greycolor">Pop Band</p>
+                </div>
+                <div class="artist-song-duration">
+                    <i class="fa-solid fa-ellipsis greycolor" style="padding-left: 6px;"></i>
+                    <p class="alice-text-color rem0-8-fontsize">4:44</p>
+                </div>
+            </div>
+            <div class="Similar-artist-body">
+                <a href=""><img class="aside-artist-image" src="images/imagine-dragons.png" alt=""
+                        style="width: 100%;"></a>
+
+                <div class="artist-song-name alice-text-color">
+                    <h6>Imagine Dragons</h6>
+                    <p class="rem0-8-fontsize greycolor">Pop Band</p>
+                </div>
+                <div class="artist-song-duration">
+                    <i class="fa-solid fa-ellipsis greycolor" style="padding-left: 6px;"></i>
+                    <p class="alice-text-color rem0-8-fontsize">4:44</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar-artist-section-heading">
+            <h4 class="alice-text-color text-times-new-roman">Recently Played</h4>
+            <a class="greycolor rem0-8-fontsize" href="">View All</a>
+
+        </div>
+
+
+        <!-- Recently Played Section -->
+
+        <div class="recently-played-parent">
+            <div class="recently-played">
+                <p class="alice-text-color song-number">01</p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/mirage-song.png" ;
+                        alt=""></a>
+
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details" style="font-family: monospace;">
+                    <h6 class="song-name-style" style="margin-bottom: 0;">Mirage</h6>
+                    <p class="song-author"> Else</p>
+                </div>
+                <a href="" class="aside-heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+            </div>
+
+            <div class="recently-played">
+                <p class="alice-text-color song-number">02</p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/worry-abt-us.png" ;
+                        alt=""></a>
+
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details" style="font-family: monospace;">
+                    <h6 class="song-name-style" style="margin-bottom: 0;">Worry About Us</h6>
+                    <p class="song-author"> Else</p>
+                </div>
+                <a href="" class="aside-heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+            </div>
+
+            <div class="recently-played">
+                <p class="alice-text-color song-number"><i class="fa-solid fa-chart-simple"
+                        style="color: lightblue;"></i></p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/new-skin.png" ; alt=""></a>
+
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details" style="font-family: monospace;">
+                    <h6 class="song-name-style" style="margin-bottom: 0;">New Skin</h6>
+                    <p class="song-author"> Flume</p>
+                </div>
+                <a href="" class="aside-heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+            </div>
+
+            <div class="recently-played">
+                <p class="alice-text-color song-number">04</p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/worry-abt-us.png" ;
+                        alt=""></a>
+
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details" style="font-family: monospace;">
+                    <h6 class="song-name-style" style="margin-bottom: 0;">Worry About Us</h6>
+                    <p class="song-author"> Rosie Lowe</p>
+                </div>
+                <a href="" class="aside-heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+            </div>
+
+            <div class="recently-played">
+                <p class="alice-text-color song-number">05</p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/new-skin.png" ; alt=""></a>
+
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details" style="font-family: monospace;">
+                    <h6 class="song-name-style" style="margin-bottom: 0;">New Skin</h6>
+                    <p class="song-author"> Flume</p>
+                </div>
+                <a href="" class="aside-heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+            </div>
+
+            <div class="recently-played">
+                <p class="alice-text-color song-number">06</p>
+                <a href="" class="song-list-margin"><img class="song-list-img" src="images/mirage-2-song.png" ;
+                        alt=""></a>
+
+                <a href="" class="play-button"><i class="fa-solid fa-play" style="color: white;"></i></a>
+
+                <div class="alice-text-color author-details" style="font-family: monospace;">
+                    <h6 class="song-name-style" style="margin-bottom: 0;">Mirage</h6>
+                    <p class="song-author"> Else</p>
+                </div>
+                <a href="" class="aside-heart"><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <!-- Footer - Music Audio Player -->
+
+    <footer class="audio-player">
+        <div class="audio-operators">
+            <img class="current-audio-img" src="images/footer-song-img.png" alt="">
+            <div class="current-song-name">
+                <p class="text-sogoe" style="margin: 0;">Imagine Dragons</p>
+                <p class="rem0-8-fontsize greycolor" style="margin: 0;">John Lennon</p>
+            </div>
+            <div class="footer-heart">
+                <a href=""><i class="fa-regular fa-heart" style="font-size: 20px;"></i></a>
+                <a href="" class="download-button" style="margin-left: 10px;"><i class="fa-solid fa-download"></i></a>
+            </div>
+
+
+            <div class="current-song-timeline">
+
+                <!-- Audio HTML tag to play audio -->
+                <audio id="myAudio">
+                    <source src="songs/song1.mp3" type="audio/mp3   ">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="song-operators">
+                    <a href="" class=""><i class="fa-solid fa-arrow-rotate-right"></i></a>
+
+                    <a href="" style="margin-right: 10px;"><i class="fa-solid fa-forward-step fa-rotate-180"></i></a>
+
+                    <!-- Audio - Used to play a demo of functionality using JS -->
+
+                    <button onclick="playAudio()" class="btn bg-transparent" type="button"
+                        style="background-color: #282828; padding: 0px; width: 25px;"><i class="fa-solid fa-play"
+                            style="color: white;"></i></button>
+
+                    <button onclick="pauseAudio()" class="btn bg-transparent" type="button"
+                        style="background-color: #282828; padding: 0px; width: 25px;"><i
+                            class="fa-solid fa-circle-pause" style="color: white;"></i></button>
+
+                    <a href=""><i class="fa-solid fa-forward-step"></i></a>
+                    <a href=""><i class="fa-sharp fa-solid fa-repeat"></i></a>
+                </div>
+
+                <!-- Song Progress shown with the help of progress bar -->
+                <div class="time-line-song">
+                    <p class="rem0-8-fontsize greycolor">3:12</p>
+                    <div class="progress song-time-line" style="height: 3px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated inside-bar"
+                            role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                        </div>
+                    </div>
+                    <p class="rem0-8-fontsize greycolor">4:44</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="audio-settings">
+                    <a href="" style="color: green;"><i class="fa-brands fa-spotify"></i></a>
+                    <a href=""><i class="fa-solid fa-volume-xmark"></i></a>
+                    <a href=""><i class="fa-sharp fa-solid fa-volume-high"></i></a>
+
+                    <input type="range" class="form-range volume-se volume-size" min="0" max="10" id="customRange2"
+                        style="width: 70px; margin-right: 10px;">
+                    <a href="" class="resize-icon"> <i class="fa-solid fa-up-right-and-down-left-from-center "></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JS Section -->
+
+    <!-- BOOTSTRAP 4.3 JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // For Search Bar
+
+        function toggleShow() {
+            var el = document.getElementById("box");
+            el.classList.toggle("show");
+        }
+
+        // For hamburger icon
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        // JS to Play Audio
+
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        } 
+    </script>
+
+</body>
+
+</html>
